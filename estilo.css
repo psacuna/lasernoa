@@ -16,7 +16,9 @@ header{
 
 @media (max-width: 420px){
     header{
-        height: 380px;
+        height: 570px;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -35,13 +37,22 @@ header{
         text-align: center;
         border-radius: 0%;
         width: 100%;
-        height: 340px;
+        height: 380px;
     }
 }
 
 .img_logo{
     width: 30% ;
 }
+
+@media (max-width: 420px){
+    .img_logo{
+        margin-bottom: 20px;
+    }
+        
+}
+
+
 .menu{
     list-style: none;
     background-color: (24, 24, 24);
@@ -55,9 +66,10 @@ header{
 
 @media (max-width: 420px){
     .menu, .li a{
+        display: none;
         flex-direction: column;
         text-align: center;
-    
+        
     }
 }
 
@@ -90,6 +102,52 @@ li a:hover{
     ;
     transform: scale(1.2, 1.2);
     }
+
+    .botonmenu{
+        display: none;
+        
+    }
+
+    @media (max-width: 420px){
+        .botonmenu{
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+            
+        }
+    }
+
+    .bml{
+        display: none;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    @media (max-width: 420px){
+        .bml{
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            background-color: black;
+            border-radius: 8px;
+            padding: 10px 10px;
+            margin: 15px;
+            margin-left: 0;
+            
+            border: 2px solid;
+            border-color: goldenrod;
+            
+        }
+    }
+
+
 
     .cj{
         background-color: white;
@@ -133,10 +191,45 @@ li a:hover{
         align-items: center;
     }
 
+    .h4footer{
+        font-weight: normal;
+        font-size: 20px;
+    }
+
+    .h4des{
+        flex-direction: column;
+        font-weight: normal;
+        font-size: 14px;
+        padding-bottom: 0%;
+        
+    }
+
+    .redes{
+        display: flex;
+        align-items: center;
+    }
+
+    @media (max-width: 420px){
+        .redes{
+            flex-direction: column;
+        }
+    }
+
+    .des{
+        display: flex;
+    }
+
+    @media (max-width: 420px){
+        .des{
+            flex-direction: column;
+        }
+    }
+
     footer {
         background-color: black;
         padding: 40px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center; }
         footer h4 {
